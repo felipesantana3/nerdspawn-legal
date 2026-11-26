@@ -36,92 +36,313 @@
       padding: 30px;
       color: #aaa;
     }
+  .review { border: 1px solid #9146ff; border-radius: 10px; padding: 16px; background: #211831; } nav { display: flex; flex-wrap: wrap; justify-content: center; gap: 16px; } a { overflow-wrap: anywhere; } a:focus-visible { outline: 3px solid #b58aff; outline-offset: 4px; }
   </style>
 </head>
 <body>
-  <header>
-    <h1>NerdSpawn</h1>
-    <p>Política de Privacidade</p>
-  </header>
-
-  <main>
-    <div class="notice">
-      <strong>Documento em preparação.</strong>
-      Esta versão ainda depende da confirmação do responsável
-      pelo tratamento dos dados, dos prazos de retenção e dos
-      procedimentos definitivos de privacidade.
-    </div>
-
-    <h2>1. Sobre o NerdSpawn</h2>
-    <p>
-      O NerdSpawn é um aplicativo voltado à interação entre
-      pessoas interessadas na cultura geek, oferecendo perfis,
-      comunidades, conversas e descoberta de locais e eventos.
-    </p>
-
-    <h2>2. Dados tratados</h2>
-    <p>
-      Conforme as funcionalidades utilizadas, o aplicativo
-      poderá tratar dados de cadastro, informações de perfil,
-      interesses, mensagens, participação em comunidades,
-      identificadores de dispositivos e localização opcional.
-    </p>
-
-    <h2>3. Finalidades</h2>
-    <p>
-      Esses dados são utilizados para autenticação, funcionamento
-      das funcionalidades sociais, segurança, prevenção de abusos,
-      notificações e recursos de localização solicitados pelo usuário.
-    </p>
-
-    <h2>4. Serviços utilizados</h2>
-    <p>
-      O NerdSpawn utiliza serviços de infraestrutura, incluindo
-      Supabase, para autenticação e armazenamento de informações.
-      A relação definitiva de prestadores e eventuais transferências
-      internacionais será detalhada na versão final desta política.
-    </p>
-
-    <h2>5. Segurança</h2>
-    <p>
-      São utilizados mecanismos de autenticação e controle de
-      acesso para proteger as informações. Nenhum sistema,
-      entretanto, pode garantir segurança absoluta.
-    </p>
-
-    <h2>6. Retenção e exclusão</h2>
-    <p>
-      O NerdSpawn possui um processo de solicitação de exclusão
-      de conta. Os prazos definitivos de eliminação, retenção de
-      comprovantes e eventuais exceções legais serão publicados
-      após a revisão da política.
-    </p>
-
-    <h2>7. Direitos dos titulares</h2>
-    <p>
-      Os usuários podem entrar em contato para solicitar
-      informações sobre seus dados pessoais e exercer os
-      direitos previstos na legislação aplicável, incluindo
-      correção e exclusão quando cabíveis.
-    </p>
-
-    <h2>8. Contato</h2>
-    <p>
-      Para questões relacionadas à privacidade:
-      <a href="mailto:felipe.sousasantana1@gmail.com">
-        felipe.sousasantana1@gmail.com
-      </a>
-    </p>
-
-    <h2>9. Identificação do responsável</h2>
-    <p>
-      A identificação definitiva do responsável pelo tratamento
-      dos dados será incluída antes da publicação oficial.
-    </p>
-  </main>
-
-  <footer>
-    NerdSpawn — Documento preliminar para revisão
-  </footer>
-</body>
+    <header>
+      <h1>Política de Privacidade do NerdSpawn</h1>
+      <p>
+        Controlador: Felipe Santana, pessoa física.<br />Contato:
+        <a href="mailto:felipe.sousasantana1@gmail.com"
+          >felipe.sousasantana1@gmail.com</a
+        >.
+      </p>
+      <nav aria-label="Documentos">
+        <a href="exclusao-de-conta.html">Solicitar exclusão de conta</a>
+      </nav>
+    </header>
+    <main>
+      <p class="review">
+        <strong>REVISÃO DO RESPONSÁVEL:</strong> antes da publicação, aprovar os
+        critérios de retenção ainda pendentes, as bases legais e a identificação dos
+        fornecedores e transferências indicados abaixo. Identificação e contato
+        informados pelo responsável; prazos de evidências, comprovantes e
+        resposta inicial escolhidos e descritos abaixo. A configuração efetiva
+        da exclusão e as informações externas ainda precisam de confirmação.
+        Data de vigência: definir na aprovação. Este arquivo local ainda não
+        substitui a página pública.
+      </p>
+      <h2>1. Aplicativo e público</h2>
+      <p>
+        O NerdSpawn oferece perfis, interesses, comunidades, chats e mensagens
+        privadas para pessoas com 18 anos completos ou mais. O cadastro exige
+        declaração explícita de maioridade. Essa declaração não é verificação
+        documental. Não solicitamos CPF, documentos de identidade ou data de
+        nascimento nesse cadastro.
+      </p>
+      <h2>2. Dados e finalidades</h2>
+      <ul>
+        <li>
+          <strong>Conta:</strong> e-mail, identificador interno e credenciais de
+          autenticação tratadas pelo Supabase Auth, para cadastrar, autenticar e
+          recuperar acesso. Senhas não devem ser enviadas ao suporte.
+        </li>
+        <li>
+          <strong>Perfil:</strong> nickname, nome de exibição, biografia, URL
+          opcional do avatar e interesses, para identificar participantes e
+          personalizar a experiência. Não é obrigatório informar nome civil. O
+          perfil e os interesses podem ser vistos por outros usuários
+          autenticados conforme as funcionalidades.
+        </li>
+        <li>
+          <strong>Participação:</strong> comunidades, vínculos de participação,
+          mensagens e seus horários, para disponibilizar conversas e histórico.
+          Mensagens comunitárias ficam disponíveis aos participantes
+          autorizados; mensagens privadas ficam disponíveis aos participantes da
+          conversa. Não há criptografia ponta a ponta implementada: o conteúdo é
+          armazenado no backend e está sujeito aos controles administrativos de
+          segurança e moderação.
+        </li>
+        <li>
+          <strong>Segurança:</strong> bloqueios, denúncias, motivos, textos e
+          referências a mensagens, para prevenir e tratar abusos. Informações de
+          denúncias têm acesso restrito. Não inclua dados sensíveis
+          desnecessários no texto.
+        </li>
+        <li>
+          <strong>Notificações:</strong> preferências, identificador aleatório
+          de instalação, token de push, registros de dispositivos, entrega e
+          interação, para avisar sobre mensagens e impedir avisos destinados à
+          conta errada. A permissão é opcional. O aviso enviado ao serviço push
+          é genérico e não inclui o texto da mensagem privada.
+        </li>
+        <li>
+          <strong>Maioridade:</strong> declaração positiva, versão do texto,
+          identificador da conta e data/hora no servidor, para registrar a
+          declaração exigida no cadastro.
+        </li>
+        <li>
+          <strong>Exclusão e atendimento:</strong> informações mínimas do
+          pedido, comprovante e mensagens enviadas ao suporte, para verificar e
+          atender a solicitação. O comprovante não deve ser divulgado.
+        </li>
+        <li>
+          <strong>Dados técnicos:</strong> a infraestrutura pode registrar IP,
+          requisições, falhas e eventos de autenticação para operação e
+          segurança. Não foi identificado SDK dedicado de publicidade ou
+          analytics no aplicativo examinado.
+        </li>
+      </ul>
+      <h2>3. Localização e permissões Android</h2>
+      <p>
+        A localização é opcional e consultada em primeiro plano quando você toca
+        em “Usar minha localização”. Você pode negar a permissão ou escolher uma
+        cidade. O NerdSpawn não implementa acompanhamento contínuo ou
+        localização em segundo plano. A posição é usada em memória para o mapa e
+        os filtros; não foi implementado armazenamento do GPS da pessoa nas
+        tabelas do aplicativo.
+      </p>
+      <p>
+        A precisão depende do aparelho e da permissão concedida. O mapa utiliza
+        Google Maps; o SDK e eventuais rotas abertas no Google Maps seguem
+        também as práticas do fornecedor. Abrir uma rota transmite ao serviço o
+        destino escolhido; o link construído pelo NerdSpawn não inclui a posição
+        atual como origem. A permissão de notificações pode ser revogada nas
+        configurações do Android e os avisos podem ser desativados pelo perfil.
+      </p>
+      <p>
+        O Google informa que o Maps SDK para Android coleta dados técnicos,
+        como IP, metadados do aparelho, identificador próprio do SDK e dados de
+        falhas, para manter e melhorar seus serviços. A ausência de gravação
+        de GPS nas tabelas do NerdSpawn não significa ausência de tratamento
+        pelo serviço de mapas.
+      </p>
+      <h2>4. Prestadores e acesso aos dados</h2>
+      <p>
+        Utilizamos Supabase para autenticação, banco, APIs, tempo real e funções
+        de backend; Expo Push e Firebase Cloud Messaging/Google para entregar
+        notificações Android; Google Maps para mapas. URLs de avatar e imagens
+        podem ser carregadas de hosts externos, que recebem a requisição do
+        dispositivo. O contato de suporte utiliza uma caixa Gmail. A hospedagem
+        destes documentos públicos utiliza GitHub Pages. A solicitação web
+        autenticada é hospedada no Expo Hosting e utiliza o Supabase para
+        autenticação e processamento do pedido.
+      </p>
+      <p>
+        O projeto Supabase que armazena os dados do NerdSpawn está na região
+        us-east-1, Norte da Virgínia, Estados Unidos, conforme metadados
+        consultados em 22/11/2026. Há, portanto, armazenamento fora do Brasil.
+        Isso não determina a localização de todo processamento, logs, backups
+        ou suboperadores. Firebase Cloud Messaging utiliza infraestrutura
+        global do Google; não se declara armazenamento exclusivo no Brasil
+        para os demais serviços. O Expo Hosting utiliza Cloudflare Workers.
+      </p>
+      <p>
+        O Custom SMTP do Supabase está desativado. O responsável tratará
+        manualmente a disponibilidade do envio de e-mails de autenticação e
+        recuperação; não se declara o envio público como já operacional. Não comercializamos dados pessoais no fluxo implementado.
+        Conteúdos que você compartilha ficam disponíveis aos destinatários e
+        participantes conforme o recurso; essas pessoas podem guardar cópias
+        fora do controle do aplicativo. Não publique informações pessoais de
+        terceiros sem autorização.
+      </p>
+      <p class="review">
+        <strong>REVISÃO:</strong> validar contratos/suboperadores e mecanismos
+        de transferência internacional aplicáveis. Custom SMTP desativado,
+        com tratamento manual pelo responsável; não há integração nova nesta etapa. A região do projeto Supabase foi confirmada; os demais
+        locais de tratamento e o mecanismo jurídico aplicável ainda precisam
+        de validação. Validar também os tratamentos próprios dos SDKs e hosts
+        de imagens. Os identificadores de instalação do Firebase utilizados
+        nas notificações são distintos do identificador de instalação mantido
+        pelo NerdSpawn.
+      </p>
+      <h2>5. Bases e escolhas</h2>
+      <p>
+        A proposta de enquadramento considera execução do serviço para conta e
+        comunicação; interesses legítimos, com avaliação de necessidade e
+        direitos, para segurança e prevenção de abusos; consentimento quando
+        aplicável a escolhas opcionais; e obrigações legais ou exercício de
+        direitos quando efetivamente incidentes. A permissão do sistema
+        operacional não substitui, por si só, a análise da base legal.
+      </p>
+      <p class="review">
+        <strong>REVISÃO:</strong> aprovar o enquadramento por finalidade e as
+        escolhas de localização/notificações antes de publicar.
+      </p>
+      <h2>6. Segurança</h2>
+      <p>
+        São empregados autenticação, controles de acesso no banco e separação de
+        operações administrativas. Dados transitam pelos destinos HTTPS
+        configurados. Nenhum sistema oferece segurança absoluta. Não compartilhe
+        senha, códigos, tokens ou comprovantes. As regras da comunidade exigem
+        respeito e proíbem conteúdo ilegal, inclusive abuso e exploração sexual
+        de menores.
+      </p>
+      <h2>7. Retenção e exclusão</h2>
+      <p>
+        Dados da conta são mantidos para prestar o serviço enquanto ela estiver
+        ativa, observadas necessidade e revisão de dados de segurança. Você pode
+        pedir exclusão pelo perfil ou pela
+        <a href="https://nerdspawn--ugh57qxewp.expo.app/excluir-conta">página web autenticada de exclusão</a>,
+        sem reinstalar o aplicativo. Entre na conta e confirme o pedido com a
+        senha atual. O envio de e-mail ao suporte não é uma etapa obrigatória.
+        Se houver dificuldade de acesso, use o contato de suporte; informar um
+        e-mail ou nickname não autoriza excluir uma conta.
+      </p>
+      <p>
+        Após aceitação, o prazo operacional é de até 30 dias. O processo pode
+        terminar antes e remove a conta de autenticação, perfil, declaração
+        privada de maioridade, vínculos, mensagens de autoria da conta e demais
+        registros vinculados conforme as regras do backend. Arquivos de
+        propriedade da conta no Storage são removidos pelo processo. Mensagens
+        de outros participantes, comunidades e conteúdo de terceiros não são
+        automaticamente apagados.
+      </p>
+      <p>
+        Somente evidências mínimas de denúncias selecionadas e revisadas por
+        pessoa autorizada podem ser preservadas separadamente. O vencimento é o
+        menor entre a data aprovada para o caso e 30 dias após a exclusão da
+        conta de autenticação. A preservação é excepcional e exige necessidade
+        justificada. Essa evidência pode conter dados
+        pessoais; a revisão não garante anonimização.
+      </p>
+      <p>
+        O registro do pedido contém identificador, hash do segredo do
+        comprovante, datas, estado e parâmetros da política. O vínculo com o
+        identificador da conta é removido na conclusão. O prazo do registro e da
+        consulta do comprovante é de 30 dias após a conclusão. Pedidos ainda
+        pendentes ou em nova tentativa não são apagados por esse prazo de
+        comprovantes concluídos. O descarte de evidências
+        vencidas e registros concluídos ocorre nas execuções do processador de
+        exclusões, inclusive quando não há novos pedidos. O critério operacional
+        escolhido é o descarte na próxima execução bem-sucedida
+        do worker após o vencimento, com monitoramento de falhas. A configuração
+        e o monitoramento em produção ainda precisam ser comprovados; não se
+        promete descarte no instante exato do vencimento.
+      </p>
+      <p class="review">
+        <strong>CONFIRMAÇÃO ANTES DA PUBLICAÇÃO:</strong> os dois prazos de
+        30 dias acima foram escolhidos pelo responsável. Conferir sua
+        configuração efetiva e a operação do expurgo antes de apresentar este
+        texto como vigente. A exclusão ainda não está autorizada para ativação
+        nesta revisão. As bases legais continuam pendentes de validação.
+        Definir também critérios e prazos de revisão e eliminação para denúncias
+        de contas ativas, registros de notificações e entregas push e
+        atendimento por e-mail. A expiração da autorização de um dispositivo
+        push não elimina automaticamente seu registro.
+      </p>
+      <p class="review">
+        <strong>PRESERVAÇÕES LEGALMENTE OBRIGATÓRIAS:</strong> tratar
+        separadamente, somente quando identificada obrigação aplicável, com
+        dados necessários, fundamento, acesso e prazo próprios validados. Não
+        se presume obrigação nem prazo adicional. O fluxo atual não
+        implementa suspensão do expurgo por obrigação legal; não usar o campo
+        de finalidade da evidência como se ele impedisse a exclusão automática.
+      </p>
+      <p>
+        O processo de exclusão não apaga diretamente logs dos fornecedores,
+        registros de auditoria mantidos pela infraestrutura, mensagens da caixa
+        de suporte ou todas as cópias de backup. Esses dados podem permanecer
+        conforme configurações e obrigações efetivamente aplicáveis. O plano
+        Supabase é Free, sem backups automáticos do projeto; existe backup
+        manual. A gravação de auditoria Auth no banco está desativada, sem
+        afirmar eliminação de registros anteriores. O GitHub Actions tem
+        retenção configurada de 90 dias; esse prazo não abrange automaticamente
+        exports ou cópias baixadas. A retenção dos demais logs foi conferida
+        pelo responsável, sem prazo numérico adicional informado neste texto.
+        Critérios de descarte e acesso do backup manual e do suporte continuam
+        em revisão. Não se presume ausência de cópias internas dos fornecedores. Eventual restauração
+        deve reconciliar as exclusões antes de reabrir acesso aos dados
+        restaurados. Não há reconciliação automática implementada; se não for
+        possível identificar com segurança as contas já excluídas, o ambiente
+        restaurado deve permanecer isolado.
+      </p>
+      <p>
+        Remover o registro de push no NerdSpawn não elimina automaticamente
+        os identificadores de instalação e demais dados técnicos mantidos pelo
+        Firebase, Expo ou Maps. O fluxo atual não solicita a exclusão de uma
+        instalação Firebase. Esses dados externos não estão abrangidos pelos
+        30 dias dos comprovantes ou das evidências.
+      </p>
+      <p>
+        Notificações já entregues e dados guardados em aparelhos desconectados
+        ou por outros participantes não podem ser recolhidos com garantia.
+        Consulte a <a href="exclusao-de-conta.html">página de exclusão</a> para
+        instruções.
+      </p>
+      <p>
+        O comprovante salvo no aparelho é separado do registro no servidor. Você
+        pode removê-lo pela opção “Apagar comprovante deste dispositivo” na tela
+        de exclusão; o código não define expiração automática dessa cópia local.
+        Mensagens de terceiros que mencionem você também podem conter dados
+        pessoais: pedidos de remoção dessas referências são avaliados pelo
+        contato de privacidade. URLs de imagens externas não são apagadas no
+        serviço de origem pelo processo de exclusão do NerdSpawn.
+      </p>
+      <h2>8. Seus direitos</h2>
+      <p>
+        Nos termos da LGPD e quando aplicável, você pode solicitar confirmação e
+        acesso, correção, anonimização, bloqueio ou eliminação de dados
+        desnecessários ou irregulares, portabilidade nos termos da
+        regulamentação, informações sobre compartilhamento, esclarecimentos
+        sobre consentimento e sua revogação, oposição e revisão de decisões
+        automatizadas que afetem seus interesses. Também pode apresentar petição
+        à ANPD. A avaliação considera os requisitos e exceções legais de cada
+        pedido.
+      </p>
+      <p>
+        Escreva para
+        <a href="mailto:felipe.sousasantana1@gmail.com"
+          >felipe.sousasantana1@gmail.com</a
+        >. Podemos precisar de uma verificação proporcional para proteger sua
+        conta, sem pedir senha por e-mail. Não envie documentos ou conteúdo
+        sensível espontaneamente.
+      </p>
+      <h2>9. Atualizações e contato</h2>
+      <p>
+        Alterações relevantes serão refletidas nesta página e comunicadas de
+        forma adequada. Responsável pelo NerdSpawn e pelo atendimento de
+        privacidade: Felipe Santana, pessoa física, pelo e-mail acima.
+      </p>
+      <p>
+        Felipe Santana é o responsável inicial por privacidade, suporte,
+        moderação e segurança. O prazo de resposta inicial do suporte é de até
+        2 dias úteis; não é prazo de conclusão da exclusão nem prazo geral para
+        todos os direitos LGPD. O suporte também atende dificuldades de acesso
+        à página autenticada.
+      </p>
+    </main>
+    <footer>NerdSpawn · Privacidade e proteção de dados</footer>
+  </body>
 </html>
